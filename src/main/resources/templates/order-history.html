@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Order History - My E-commerce Store</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<main class="container">
+  <h1>Order History</h1>
+  <table class="order-table">
+    <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>Date</th>
+      <th>Status</th>
+      <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>#12345</td>
+      <td>2025-01-15</td>
+      <td>Delivered</td>
+      <td>$59.98</td>
+    </tr>
+    </tbody>
+  </table>
+</main>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

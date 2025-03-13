@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - My E-commerce Store</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<main class="container">
+    <h1>Welcome to My E-commerce Store</h1>
+    <p>Explore our exclusive collection of products!</p>
+    <img src="/images/banner.jpg" alt="Store Banner">
+</main>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

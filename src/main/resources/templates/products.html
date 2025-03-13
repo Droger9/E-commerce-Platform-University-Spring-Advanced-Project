@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Products - My E-commerce Store</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<main class="container">
+    <h1>Our Products</h1>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="/images/product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$29.99</p>
+            <a th:href="@{/product-details(id=1)}" class="btn">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="/images/product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$39.99</p>
+            <a th:href="@{/product-details(id=2)}" class="btn">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="/images/product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>$49.99</p>
+            <a th:href="@{/product-details(id=3)}" class="btn">View Details</a>
+        </div>
+    </div>
+</main>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

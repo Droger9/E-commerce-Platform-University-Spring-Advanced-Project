@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ - My E-commerce Store</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<main class="container">
+  <h1>Frequently Asked Questions</h1>
+  <section class="faq-item">
+    <h2>How do I place an order?</h2>
+    <p>Add products to your cart and proceed to checkout.</p>
+  </section>
+  <section class="faq-item">
+    <h2>What payment methods do you accept?</h2>
+    <p>We accept major credit cards and PayPal.</p>
+  </section>
+  <section class="faq-item">
+    <h2>How do I track my order?</h2>
+    <p>Track your order in the Order History section of your profile.</p>
+  </section>
+</main>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
